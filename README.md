@@ -23,7 +23,6 @@ Aplikacja pozwala na wykrywanie twarzy na zdjęciach oraz klasyfikację emocji p
 - Flask
 - OpenCV
 - MTCNN
-- PIL
 - Bootstrap 5
 
 ## Wymagania systemowe 🔧
