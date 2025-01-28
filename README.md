@@ -51,11 +51,11 @@ Aplikacja pozwala na wykrywanie twarzy na zdjęciach oraz klasyfikację emocji p
 Model AI 🧠
 
 Model wykorzystuje architekturę CNN z:
-4 warstwy konwolucyjne
-Normalizacja wsadowa
-Maxpooling
-Warstwy dropout
-Funkcja aktywacji ReLU
+4 warstwy konwolucyjne, 
+Normalizacja wsadowa, 
+Maxpooling, 
+Warstwy dropout, 
+Funkcja aktywacji ReLU, 
 Klasyfikacja 8 emocji
 
 Autorzy👨‍💻:
