@@ -485,9 +485,6 @@ def download_zip():
         files_to_zip2 = data.get('files2', [])
         username = session.get('username')
 
-        print(files_to_zip)
-        print(files_to_zip2)
-
         if not files_to_zip or not username:
             return jsonify({'success': False, 'error': 'Brak plików do spakowania w ZIP'}), 400
 
@@ -502,10 +499,10 @@ def download_zip():
                 # Sprawdź, czy plik istnieje i zapisz jego ścieżkę
                 if os.path.exists(file_path):
                     print(f"Dodawanie pliku do ZIP: {file_path}")
-                    if file_path.split(os.sep)[4] == "dataset":
-                        zipf.write(file_path, os.path.join(*file_path.split(os.sep)[5:]))
-                    else:
-                        zipf.write(file_path, os.path.join(*file_path.split(os.sep)[4:]))
+                    for i, _ in enumerate(file_path.split(os.sep)):
+                        if _ == username:
+                            id=i
+                    zipf.write(file_path, os.path.join(*file_path.split(os.sep)[id:]))
                 else:
                     print(f"Plik nie istnieje: {file_path}")
             
