@@ -34,8 +34,8 @@ Aplikacja pozwala na wykrywanie twarzy na zdjęciach oraz klasyfikację emocji p
 
 1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/twoj_uzytkownik/twoje_repozytorium.git
-   cd twoje_repozytorium
+   git clone https://github.com/szylica/face-labeling-app.git
+   cd face-labeling-app
    ```
    Zainstaluj wymagane biblioteki:
 
