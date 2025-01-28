@@ -52,22 +52,23 @@ Struktura projektu 📁
    
 twoje_repozytorium/
 │
-├── app.py                # Główny plik aplikacji Flask
-├── tuner_ai_model_face_emotion.py  # Skrypt do strojenia modelu AI
-├── podzial_zbioru_zdjec_na_valid_test_train.py  # Skrypt do podziału danych
-├── requirements.txt      # Lista zależności
-├── emotions/             # Katalog z danymi treningowymi, walidacyjnymi i testowymi
-├── models/               # Katalog z zapisanymi modelami
-├── users/                # Katalog z danymi użytkowników
-├── static/               # Pliki statyczne (CSS, JS, obrazy)
-├── templates/            # Szablony HTML
-│   ├── index.html        # Strona główna
-│   ├── login.html        # Strona logowania
-│   ├── register.html     # Strona rejestracji
-│   ├── photos.html       # Strona z przesłanymi zdjęciami
-│   ├── 404.html          # Strona błędu 404
-│   └── 500.html          # Strona błędu 500
-└── README.md             # Ten plik
+├── app.py # Główny plik aplikacji Flask
+├── tuner_ai_model_face_emotion.py # Skrypt do strojenia modelu AI
+├── podzial_zbioru_zdjec_na_valid_test_train.py # Skrypt do podziału danych
+├── requirements.txt # Lista zależności
+├── emotions/ # Katalog z danymi treningowymi, walidacyjnymi i testowymi
+├── models/ # Katalog z zapisanymi modelami
+├── users/ # Katalog z danymi użytkowników
+├── static/ # Pliki statyczne (CSS, JS, obrazy)
+│ └── ...
+├── templates/ # Szablony HTML
+│ ├── index.html # Strona główna
+│ ├── login.html # Strona logowania
+│ ├── register.html # Strona rejestracji
+│ ├── photos.html # Strona z przesłanymi zdjęciami
+│ ├── 404.html # Strona błędu 404
+│ └── 500.html # Strona błędu 500
+└── README.md # Ten plik
 
 Model AI 🧠
 
