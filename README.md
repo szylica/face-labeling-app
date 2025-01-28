@@ -1,48 +1,84 @@
-Face Emotion Classifier 🎭
-Web aplikacja do klasyfikacji emocji twarzy z wykorzystaniem uczenia maszynowego.
+# Face Labeling App 🎯
 
-Opis projektu 📋
-Aplikacja pozwala na:
+Aplikacja webowa do klasyfikacji emocji na podstawie zdjęć twarzy z wykorzystaniem uczenia maszynowego.
 
-Automatyczne wykrywanie twarzy na zdjęciach
-Klasyfikację emocji z użyciem sieci neuronowej
-Ręczną weryfikację wykrytych emocji
-Zarządzanie sklasyfikowanymi zdjęciami
-Eksport danych w formacie ZIP
-Technologie 💻
-Python 3.8+
-TensorFlow
-Flask
-MTCNN (detekcja twarzy)
-OpenCV
-Bootstrap 5
-Wymagania systemowe 🔧
-Instalacja 🚀
-Sklonuj repozytorium:
-Zainstaluj wymagane biblioteki:
-Użycie 📱
-Uruchom aplikację:
-Otwórz przeglądarkę i przejdź do http://localhost:5000
+## Opis projektu 📋
 
-Zarejestruj się lub zaloguj
+Aplikacja pozwala na wykrywanie twarzy na zdjęciach oraz klasyfikację emocji przy użyciu sieci neuronowej. Użytkownicy mogą wgrywać zdjęcia, klasyfikować emocje oraz pobierać sklasyfikowane zdjęcia w paczce ZIP.
 
-Wgraj zdjęcia do klasyfikacji
+## Funkcje 🚀
 
-Zweryfikuj i sklasyfikuj wykryte emocje
+- Rejestracja i logowanie użytkowników
+- Automatyczna detekcja twarzy (MTCNN)
+- Klasyfikacja 8 podstawowych emocji
+- Wskaźniki pewności predykcji
+- Ręczna weryfikacja wyników
+- Możliwość pominięcia zdjęć
+- Eksport sklasyfikowanych zdjęć
 
-Pobierz sklasyfikowane zdjęcia w formacie ZIP
+## Technologie 💻
 
+- Python 3.8+
+- TensorFlow
+- Flask
+- OpenCV
+- MTCNN
+- PIL
+- Bootstrap 5
+
+## Wymagania systemowe 🔧
+
+- Python 3.8 lub nowszy
+- Biblioteki wymienione w `requirements.txt`
+
+## Instalacja 📥
+
+1. Sklonuj repozytorium:
+   ```bash
+   git clone https://github.com/twoj_uzytkownik/twoje_repozytorium.git
+   cd twoje_repozytorium
+   ```
+   Zainstaluj wymagane biblioteki:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
+   Uruchomienie ▶️
+   ```bash
+   python app.py
+   ```
+   
 Struktura projektu 📁
-Funkcje 🔍
-Rejestracja i logowanie użytkowników
-Upload wielu zdjęć jednocześnie
-Automatyczna detekcja twarzy (MTCNN)
-Klasyfikacja 8 podstawowych emocji
-Wskaźniki pewności predykcji
-Ręczna weryfikacja wyników
-Eksport sklasyfikowanych zdjęć
-Autorzy 👥
-Projekt stworzony przez Eryk Gardzielewski.
+   
+twoje_repozytorium/
+│
+├── app.py                # Główny plik aplikacji Flask
+├── tuner_ai_model_face_emotion.py  # Skrypt do strojenia modelu AI
+├── podzial_zbioru_zdjec_na_valid_test_train.py  # Skrypt do podziału danych
+├── requirements.txt      # Lista zależności
+├── emotions/             # Katalog z danymi treningowymi, walidacyjnymi i testowymi
+├── models/               # Katalog z zapisanymi modelami
+├── users/                # Katalog z danymi użytkowników
+├── static/               # Pliki statyczne (CSS, JS, obrazy)
+├── templates/            # Szablony HTML
+│   ├── index.html        # Strona główna
+│   ├── login.html        # Strona logowania
+│   ├── register.html     # Strona rejestracji
+│   ├── photos.html       # Strona z przesłanymi zdjęciami
+│   ├── 404.html          # Strona błędu 404
+│   └── 500.html          # Strona błędu 500
+└── README.md             # Ten plik
 
-Licencja 📄
-Ten projekt jest udostępniany na licencji MIT.
+Model AI 🧠
+
+Model wykorzystuje architekturę CNN z:
+4 warstwy konwolucyjne
+Normalizacja wsadowa
+Maxpooling
+Warstwy dropout
+Funkcja aktywacji ReLU
+Klasyfikacja 8 emocji
+
+Autorzy👨‍💻:
+plspry, Aquaier, Szylica, Kamil
